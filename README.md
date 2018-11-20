@@ -1,10 +1,10 @@
 <h3>Google Cloud Pub/Sub</h3>
-https://cloud.google.com/pubsub/docs/
+&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://cloud.google.com/pubsub/docs/">Pub/Sub Docs</a>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Global-scale message buffer
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;No-ops
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Auto-Scaling
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Guaranteed at-least-once delivery
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Cloud Pub/Sub is a global service (PubSub’s servers run in multiple data centers)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Cloud Pub/Sub is a global service (clients are unaware of the physical location)
 <br>
 <br><b><a href="https://cloud.google.com/pubsub/docs/authentication">Authentication</a></b>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Service accounts are recommended for almost all use cases
