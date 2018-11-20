@@ -7,7 +7,7 @@
 #   References:
 #   https://cloud.google.com/pubsub/docs/
 #
-#   Usage:  gcp_pubsub_subscribe_sync.py project_id subscription_name <num_messages>
+#   USAGE:  gcp_pubsub_subscribe_sync.py project_id subscription_name <num_messages>
 #
 ###################################################################################################
 
