@@ -277,7 +277,7 @@ def pubsub_subscribe_async(project_id, subscription_name):
 
 
 
-def pubsub_subscribe_sync(project_id, subscription_name, num_messages=1, ack_deadline=30, sleep_time=10):
+def pubsub_subscribe_sync(project_id, subscription_name, num_messages=1):
     '''
         Pub/Sub Subscribe - Synchronous PULL
 
