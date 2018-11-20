@@ -1,6 +1,5 @@
 <h3>Google Cloud Pub/Sub</h3>
 https://cloud.google.com/pubsub/docs/
-<br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Global-scale message buffer
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;No-ops
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Auto-Scaling
@@ -17,12 +16,12 @@ https://cloud.google.com/pubsub/docs/
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Permission Methods  -  projects.subscriptions.xxxx
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Permission Methods  -  projects.topics.xxxx
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Roles:
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Primitive Roles (Owner, Editor, Viewer)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.admin
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.publisher
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.subscriber
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.viewer
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.editor
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Primitive Roles (Owner, Editor, Viewer)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.admin
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.publisher
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.subscriber
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.viewer
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;pubsub.editor
 <br>
 <br><b>Publisher</b>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Creates and sends messages to a topic
@@ -39,16 +38,16 @@ https://cloud.google.com/pubsub/docs/
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;By default, a message not delivered within 7 days is deleted (range: 10 min to 7 days)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Once a message is sent to a subscriber, the subscriber must either ack or drop the message
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<b>Pull Subscription</b>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Subscriber initiates requests to the Pub/Sub server to retrieve messages
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Large volume of messages (batch delivery)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Efficiency and throughput of message processing is critical.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... HTTPS endpoint, w/ non-self-signed SSL certificate, isnt feasible.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Subscriber initiates requests to the Pub/Sub server to retrieve messages
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Large volume of messages (batch delivery)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Efficiency and throughput of message processing is critical.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... HTTPS endpoint, w/ non-self-signed SSL certificate, isnt feasible.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<b>Push Subscription</b>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;PubSub sends msg as HTTPS request to subscriber app @ preconfigured endpoint
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Lower latency (more real-time) required
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Google Cloud dependencies (such as creds) are not feasible
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Multiple topics that must be processed by the same webhook
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... App Engine Standard subscribers.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;PubSub sends msg as HTTPS request to subscriber app @ preconfigured endpoint
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Lower latency (more real-time) required
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Google Cloud dependencies (such as creds) are not feasible
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... Multiple topics that must be processed by the same webhook
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Use when... App Engine Standard subscribers.
 <br>
-<b>References:</b>
+<br><b>References:</b>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://cloud.google.com/pubsub/docs/">Google Cloud Pub/Sub Docs</a>
